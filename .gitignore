@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+*.tar.gz
+
+# Pytest and Coverage
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Allure report directory
+allure-results/
+tests/allure-results/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+*.iml
+
+# Virtual environment
+venv/
+
+# Logs
+logs/
+*.log
+tests/logs/
+
+# Others
+.DS_Store
+Thumbs.db
+
+# Exclude all XML files except data.xml
+*.xml
+!tests/data.xml
