@@ -24,9 +24,9 @@ logger = get_logger(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_DIR = os.path.join(BASE_DIR, 'logs')
 os.makedirs(LOG_DIR, exist_ok=True)
-#VIEWPORT_SIZE = {"width": 1920, "height": 1080}
-VIEWPORT_SIZE = {"width": 1366, "height": 768}
-
+VIEWPORT_SIZE = {"width": 1920, "height": 1080}
+#VIEWPORT_SIZE = {"width": 1600, "height": 768}
+#VIEWPORT_SIZE = None
 
 # Global variables to track initialization
 _playwright = None

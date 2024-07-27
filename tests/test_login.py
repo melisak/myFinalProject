@@ -25,7 +25,7 @@ class TestLogin:
         with allure.step(f"Attempt login with username: {username} and password: {password}"):
             login_page.navigate_to_login_page()
             login_page.sign_in(username, password)
-            logger.info(username, password)
+            print(username, password)
             error_message = login_page.invalid_login_message()
             check.is_not_none(error_message, "Error message should be displayed for invalid login.")
 
@@ -44,7 +44,7 @@ class TestLogin:
     def test_03_logout(self, login_page):
         login_page.navigate_to_login_page()
         login_page.sign_in()
-        logger.info(login_page.is_logged_in())
+        print(login_page.is_logged_in())
         login_page.logout()
         assert login_page.is_logged_in() == False, "Logout Failed."
 
